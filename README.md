@@ -2,7 +2,6 @@
 
 Le dossier __data__ contient les fichiers _.json_ correspondant aux listes d'utilisateurs, de message et de discussions.
 <br>
-
 </br>
 
 Le dossier __lib__ contient trois fichiers _model.js_ :
@@ -11,21 +10,18 @@ Le fichier _users.model.js_ est composé de deux fonctions :
 - _getUsers()_ qui va chercher les utilisateurs dans leur liste.
 - _saveUsers()_ qui sauvegarde les utilisateurs dans leur liste.
 <br>
-
 </br>
 
 Le fichier _messages.model.js_ est composé de deux fonctions :
 - _getMessages()_ qui fait comme pour _getUsers()_ mais avec les messages.
 - _saveMessages()_ qui fait comme pour _saveUsers()_ mais avec les messages.
 <br>
-
 </br>
 
 Le fichier _discussions.model.js_ est composé de deux fonctions :
 - _getDiscussions()_ qui n'est pas fonctionnelle.
 - _saveDiscussions()_ qui n'est pas fonctionnelle.
 <br>
-
 </br>
 
 A la fin des fichiers _model.js_, les fonctions sont exportées grâce à _module.exports_ afin de permettre leur utilisation dans le fichier _index.js_.
