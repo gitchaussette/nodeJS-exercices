@@ -27,5 +27,3 @@ app.post('/discussions', ...) n'est pas fonctionnelle.
 app.get('/users/me', ...) nous permet d'identifier un utilisateur et d'enregistrer son authentification dans les cookies.
 app.get('/messages', ...) nous permet d'obtenir tous les messages à partir de leur liste.
 app.get('/discussions', ...) n'est pas fonctionnelle.
-
-Les fichiers package-lock.json et package.json sont 
