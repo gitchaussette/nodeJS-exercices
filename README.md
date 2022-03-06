@@ -1,29 +1,42 @@
 # nodeJS-exercices
 
-Le dossier data contient les fichiers .json correspondant aux listes d'utilisateurs, de message et de discussions.
+Le dossier __data__ contient les fichiers _.json_ correspondant aux listes d'utilisateurs, de message et de discussions.
+<br>
 
+</br>
 
-Le dossier lib contient trois fichiers model.js :
+Le dossier __lib__ contient trois fichiers _model.js_ :
 
-Le fichier users.model.js est composé de deux fonctions :
-getUsers() qui va chercher les utilisateurs dans une liste users.
-saveUsers() qui sauvegarde les utilisateurs dans une liste users.
+Le fichier _users.model.js_ est composé de deux fonctions :
+- _getUsers()_ qui va chercher les utilisateurs dans leur liste.
+- _saveUsers()_ qui sauvegarde les utilisateurs dans leur liste.
+<br>
 
-Le fichier messages.model.js est composé de deux fonctions :
-getMessages() qui fait comme pour getUsers() mais avec les messages.
-saveMessages() qui fait comme pour saveUsers() mais avec les messages.
+</br>
 
-Le fichier disscussions.model.js est composé de deux fonctions :
-getDiscussions() qui n'est pas fonctionnelle.
-saveDiscussions() qui n'est pas fonctionnelle.
+Le fichier _messages.model.js_ est composé de deux fonctions :
+- _getMessages()_ qui fait comme pour _getUsers()_ mais avec les messages.
+- _saveMessages()_ qui fait comme pour _saveUsers()_ mais avec les messages.
+<br>
 
-A la fin des fichiers model.js, les fonctions sont exportées grâce à module.exports afin de permettre leur utilisation dans le fichier index.js.
+</br>
 
+Le fichier _discussions.model.js_ est composé de deux fonctions :
+- _getDiscussions()_ qui n'est pas fonctionnelle.
+- _saveDiscussions()_ qui n'est pas fonctionnelle.
+<br>
 
-Dans le fichier index.js se situent des fonctionnalités app.post et app.get :
-app.post('/users', ...) nous permet d'ajouter un utilisateur et son mot de passe à la liste des utilisateurs, la fonction vérifie si l'utilisateur n'existe pas déjà.
-app.post('/messages', ...) nous permet d'ajouter des messages à leur liste, avec l'heure à laquelle ils ont été publiés ainsi que leur auteur.
-app.post('/discussions', ...) n'est pas fonctionnelle.
-app.get('/users/me', ...) nous permet d'identifier un utilisateur et d'enregistrer son authentification dans les cookies.
-app.get('/messages', ...) nous permet d'obtenir tous les messages à partir de leur liste.
-app.get('/discussions', ...) n'est pas fonctionnelle.
+</br>
+
+A la fin des fichiers _model.js_, les fonctions sont exportées grâce à _module.exports_ afin de permettre leur utilisation dans le fichier _index.js_.
+<br>
+
+</br>
+
+Dans le fichier _index.js_ se situent des fonctionnalités _app.post_ et _app.get_ :
+- _app.post('/users', ...)_ nous permet d'ajouter un utilisateur et son mot de passe à la liste des utilisateurs, la fonction vérifie si l'utilisateur n'existe pas déjà.
+- _app.post('/messages', ...)_ nous permet d'ajouter des messages à leur liste, avec l'heure à laquelle ils ont été publiés ainsi que leur auteur.
+- _app.post('/discussions', ...)_ n'est pas fonctionnelle.
+- _app.get('/users/me', ...)_ nous permet d'identifier un utilisateur et d'enregistrer son authentification dans les cookies.
+- _app.get('/messages', ...)_ nous permet d'obtenir tous les messages à partir de leur liste.
+- _app.get('/discussions', ...)_ n'est pas fonctionnelle.
